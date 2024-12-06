@@ -1,3 +1,5 @@
+#pragma GCC diagnostic ignored "-Wreorder"
+
 #ifdef ESP32
 
 #include "enabled.h"

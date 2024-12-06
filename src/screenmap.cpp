@@ -88,7 +88,7 @@ void ScreenMap::toJsonStr(const FixedMap<Str, ScreenMap, 16>& segmentMaps, Str* 
 
 static void split(const Str& str, char delimiter, FixedVector<Str, 3>* parts) {
     // don't use std for anything.
-    int16_t current, previous = 0;
+    int16_t current = 0, previous = 0;
     while (current != -1) {
         parts->push_back(str.substring(previous, current).trim());
         previous = current + 1;
